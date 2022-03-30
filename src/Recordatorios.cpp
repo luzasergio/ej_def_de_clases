@@ -56,8 +56,9 @@ ostream& operator<<(ostream& os, Fecha f) {
 #if EJ >= 9
 bool Fecha::operator==(Fecha o) {
     bool igual_dia = this->dia() == o.dia();
+    bool igual_mes = this -> mes() == o.mes();
     // Completar iguadad (ej 9)
-    return igual_dia;
+    return igual_dia && igual_mes;
 }
 #endif
 
