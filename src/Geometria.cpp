@@ -39,6 +39,35 @@ float Rectangulo::area() {
 
 // Ejercicio 2
 
+class Elipse{
+
+public:
+    Elipse(uint r_a, uint r_b);
+    uint r_a();
+    uint r_b();
+    float area();
+
+private:
+    uint r_a_;
+    uint r_b_;
+    float PI = 3.14;
+
+};
+
+Elipse::Elipse(uint r_a, uint r_b) : r_a_(r_a), r_b_(r_b){} //constructor que inicializa las variables
+
+uint Elipse::r_b() {
+    return r_b_;
+}
+
+uint Elipse::r_a() {
+    return r_a_;
+}
+
+float Elipse::area() {
+    return r_a() * r_b_ * PI;
+}
+
 // Clase Elipse
 
 // Ejercicio 3
@@ -53,13 +82,15 @@ class Cuadrado {
         Rectangulo r_;
 };
 
-Cuadrado::Cuadrado(uint lado): r_(lado, lado) {}
+Cuadrado::Cuadrado(uint lado): r_(lado, lado) {}//Inicializa el objeto con un rectángulo de lados iguales
 
 uint Cuadrado::lado() {
+    return r_.alto();
     // Completar
 }
 
 float Cuadrado::area() {
+    return lado() * lado();
     // Completar
 }
 
