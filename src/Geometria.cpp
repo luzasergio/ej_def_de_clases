@@ -19,15 +19,23 @@ class Rectangulo {
 
 };
 
-Rectangulo::Rectangulo(uint alto, uint ancho) : /* Completar */ {};
+Rectangulo::Rectangulo(uint alto, uint ancho) : alto_(alto), ancho_(ancho) {};
 
 uint Rectangulo::alto() {
+    return alto_;
     // Completar
 }
 
 // Completar definición: ancho
+uint Rectangulo::ancho() {
+    return ancho_;
+}
 
 // Completar definición: area
+float Rectangulo::area() {
+    //return alto() * ancho(); porque esto me da error?
+    return alto_ * ancho_;
+}
 
 // Ejercicio 2
 
