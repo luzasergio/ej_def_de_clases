@@ -25,6 +25,9 @@ class Fecha {
     int mes(); //devuelve el valor del mes
     int dia(); //devuelve el valor del dia
 
+    //Para el ejercicio 10
+    void incrementar_dia(); //Función que incrementa en uno el día actual
+
     #if EJ >= 9 // Para ejercicio 9
     bool operator==(Fecha o);
     #endif
@@ -32,17 +35,17 @@ class Fecha {
   private:
     //Completar miembros internos
     int mes_;
-    int fecha_;
+    int dia_;
 };
 
-Fecha::Fecha(int mes, int dia) : mes_(mes), fecha_(dia){}
+Fecha::Fecha(int mes, int dia) : mes_(mes), dia_(dia){}
 
 int Fecha::mes() {
     return mes_;
 }
 
 int Fecha::dia() {
-    return fecha_;
+    return dia_;
 }
 
 //Ejercicio 8
@@ -61,6 +64,24 @@ bool Fecha::operator==(Fecha o) {
     return igual_dia && igual_mes;
 }
 #endif
+
+//Desarrollo del ejercicio 10
+void Fecha ::incrementar_dia() {
+    int mesActual = this -> mes();
+    int diaActual = this -> dia();
+
+    if (diaActual < dias_en_mes(mesActual)){
+        dia_++;
+    } else{
+        dia_ = 1;
+        if (mesActual == 12){
+            mes_ = 1;
+        } else
+            mes_++;
+    }
+}
+
+
 
 // Ejercicio 11, 12
 
