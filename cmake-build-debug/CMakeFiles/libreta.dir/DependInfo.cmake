@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/luzas/CLionProjects/labo02/tests/test_libreta.cpp" "C:/Users/luzas/CLionProjects/labo02/cmake-build-debug/CMakeFiles/libreta.dir/tests/test_libreta.cpp.obj"
+  "C:/Users/luzas/CLionProjects/Algo2/Labo_2_clase/tests/test_libreta.cpp" "C:/Users/luzas/CLionProjects/Algo2/Labo_2_clase/cmake-build-debug/CMakeFiles/libreta.dir/tests/test_libreta.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/luzas/CLionProjects/labo02/cmake-build-debug/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "C:/Users/luzas/CLionProjects/labo02/cmake-build-debug/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/luzas/CLionProjects/Algo2/Labo_2_clase/cmake-build-debug/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/luzas/CLionProjects/Algo2/Labo_2_clase/cmake-build-debug/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

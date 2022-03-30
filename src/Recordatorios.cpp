@@ -21,13 +21,36 @@ uint dias_en_mes(uint mes) {
 class Fecha {
   public:
     // Completar declaraciones funciones
+    Fecha(int mes, int dia); //Constructor de la clase
+    int mes(); //devuelve el valor del mes
+    int dia(); //devuelve el valor del dia
+
     #if EJ >= 9 // Para ejercicio 9
     bool operator==(Fecha o);
     #endif
 
   private:
     //Completar miembros internos
+    int mes_;
+    int fecha_;
 };
+
+Fecha::Fecha(int mes, int dia) : mes_(mes), fecha_(dia){}
+
+int Fecha::mes() {
+    return mes_;
+}
+
+int Fecha::dia() {
+    return fecha_;
+}
+
+//Ejercicio 8
+
+ostream& operator<<(ostream& os, Fecha f) {
+    os  <<  f.dia() << "/" << f.mes();
+    return os;
+}
 
 
 #if EJ >= 9

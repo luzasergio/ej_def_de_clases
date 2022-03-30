@@ -19,7 +19,7 @@ class Rectangulo {
 
 };
 
-Rectangulo::Rectangulo(uint alto, uint ancho) : alto_(alto), ancho_(ancho) {};
+Rectangulo::Rectangulo(uint alto, uint ancho) : alto_(alto), ancho_(ancho) {}
 
 uint Rectangulo::alto() {
     return alto_;
