@@ -33,8 +33,8 @@ uint Rectangulo::ancho() {
 
 // Completar definición: area
 float Rectangulo::area() {
-    //return alto() * ancho(); porque esto me da error?
-    return alto_ * ancho_;
+    return alto() * ancho(); //son equivalentes ambas líneas?
+    //return alto_ * ancho_;
 }
 
 // Ejercicio 2
