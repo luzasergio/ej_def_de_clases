@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/gtest_main.cc" "C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/cmake-build-debug/CMakeFiles/gtest_main.dir/tests/gtest-1.8.1/gtest_main.cc.obj"
+  "C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/gtest_main.cc" "C:/Users/luzas/CLionProjects/labo02/cmake-build-debug/CMakeFiles/gtest_main.dir/tests/gtest-1.8.1/gtest_main.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

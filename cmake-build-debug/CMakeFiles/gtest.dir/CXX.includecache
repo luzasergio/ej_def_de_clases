@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/gtest-all.cc
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/gtest-all.cc
 gtest.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/gtest.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/gtest.h
 ctype.h
 -
 math.h
@@ -114,13 +114,13 @@ windows.h
 crt_externs.h
 -
 absl/debugging/failure_signal_handler.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/debugging/failure_signal_handler.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/debugging/failure_signal_handler.h
 absl/debugging/stacktrace.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/debugging/stacktrace.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/debugging/stacktrace.h
 absl/debugging/symbolize.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/debugging/symbolize.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/debugging/symbolize.h
 absl/strings/str_cat.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/strings/str_cat.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/strings/str_cat.h
 crt_externs.h
 -
 errno.h
@@ -216,7 +216,7 @@ ostream
 string
 -
 
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/gtest.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/gtest.h
 limits
 -
 ostream
@@ -358,11 +358,11 @@ vector
 tuple
 -
 absl/strings/string_view.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/strings/string_view.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/strings/string_view.h
 absl/types/optional.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/types/optional.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/types/optional.h
 absl/types/variant.h
-C:/Users/luzas/LCDA/Algo 2/Labo/ejercitacion_definicion_clases/tests/gtest-1.8.1/absl/types/variant.h
+C:/Users/luzas/CLionProjects/labo02/tests/gtest-1.8.1/absl/types/variant.h
 iosfwd
 -
 vector

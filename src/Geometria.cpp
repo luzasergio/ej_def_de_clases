@@ -95,9 +95,29 @@ float Cuadrado::area() {
 }
 
 // Ejercicio 4
+//Puedo definir un círculo partiendo de una elipse con valores a = b
 
 // Clase Circulo
+class Circulo {
 
+public: //Es lo que denominamos la interfaz
+    Circulo(uint radio);
+
+    uint radio(); //Función que devuelve el radio de un círculo
+    float area(); //Función que devuelve el área de un círculo
+
+private:
+    Elipse e_; //Voy a usar que un círculo es una elipse con valores a = b
+    float PI = 3.14;//Puedo definir pi una única vez?
+};
+
+Circulo::Circulo(uint radio) : e_(radio, radio){} //Inicializa el objeto con una elipse de lados iguales
+uint Circulo::radio() {
+    return e_.r_a();
+}
+float Circulo::area() {
+    return PI * e_.r_a() * e_.r_a();
+}
 
 // Ejercicio 5
 
