@@ -134,8 +134,37 @@ bool Horario::operator<(Horario h) {
 
 // Ejercicio 13
 
-// Clase Recordatorio
+class Recordatorio {
 
+public:
+
+    Recordatorio(int mes, int dia, uint hora, uint min, string mensaje);
+    Fecha fecha();
+    Horario horario();
+    string mensaje();
+
+private:
+
+    Fecha fecha_;
+    Horario horario_;
+    string mensaje_;
+};
+
+Recordatorio ::Recordatorio(int mes, int dia, uint hora, uint min, string mensaje) :
+                                                    fecha_(mes, dia), horario_(hora, min), mensaje_(mensaje) {}
+
+
+Fecha Recordatorio::fecha() {
+    return this->fecha_;
+}
+
+Horario Recordatorio::horario() {
+    return this ->horario_;
+}
+
+string Recordatorio::mensaje() {
+    return mensaje_;
+}
 
 // Ejercicio 14
 
