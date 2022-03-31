@@ -85,7 +85,51 @@ void Fecha ::incrementar_dia() {
 
 // Ejercicio 11, 12
 
-// Clase Horario
+class Horario{
+
+public:
+    Horario (uint hora, uint min);
+    uint hora();
+    uint min();
+
+    //Para el ejercicio 12
+    bool operator < (Horario h);
+
+private:
+    uint hora_;
+    uint min_;
+};
+
+Horario::Horario(uint hora, uint min) : hora_(hora), min_(min){} //Constructor de la clase
+
+uint Horario::hora() {
+    return this -> hora_;
+}
+
+uint Horario::min() {
+    return this -> min_;
+}
+
+ostream& operator<<(ostream& os, Horario h) {
+    os  <<  h.hora() << ":" << h.min();
+    return os;
+}
+
+//Ejercicio 12
+
+bool Horario::operator<(Horario h) {
+    if (this -> hora() < h.hora()){
+        return true;
+    }
+    else{
+        if (this -> hora() == h.hora())
+            return this -> min() < h.min();
+        else
+            return false;
+    }
+}
+
+
 
 
 // Ejercicio 13
