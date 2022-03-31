@@ -138,7 +138,7 @@ class Recordatorio {
 
 public:
 
-    Recordatorio(int mes, int dia, uint hora, uint min, string mensaje);
+    Recordatorio(Fecha f, Horario h, string mensaje);
     Fecha fecha();
     Horario horario();
     string mensaje();
@@ -150,9 +150,8 @@ private:
     string mensaje_;
 };
 
-Recordatorio ::Recordatorio(int mes, int dia, uint hora, uint min, string mensaje) :
-                                                    fecha_(mes, dia), horario_(hora, min), mensaje_(mensaje) {}
-
+Recordatorio ::Recordatorio(Fecha f, Horario h, string mensaje) :
+                    fecha_(f.mes(), f.dia()), horario_(h.hora(), h.min()), mensaje_(mensaje){}
 
 Fecha Recordatorio::fecha() {
     return this->fecha_;
@@ -164,6 +163,11 @@ Horario Recordatorio::horario() {
 
 string Recordatorio::mensaje() {
     return mensaje_;
+}
+
+ostream& operator<<(ostream& os, Recordatorio r) {
+    os  <<  r.mensaje() << " @ " << r.fecha() << " " << r.horario();
+    return os;
 }
 
 // Ejercicio 14
