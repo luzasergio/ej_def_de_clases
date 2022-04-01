@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 
 using namespace std;
 
@@ -174,3 +175,72 @@ ostream& operator<<(ostream& os, Recordatorio r) {
 
 // Clase Agenda
 
+class Agenda {
+
+public:
+    Agenda(Fecha fecha_inicial);
+    void agregar_recordatorio(Recordatorio rec);
+    void incrementar_dia();
+    Fecha hoy();
+    list<Recordatorio> recordatorios_de_hoy();
+
+
+private:
+    Fecha fecha_actual_;
+    list<Recordatorio> recordatorios_; //Supongo que se inicializa con la lista vacía
+};
+
+Agenda::Agenda(Fecha fecha_inicial) : fecha_actual_(fecha_inicial.mes(), fecha_inicial.dia()){}
+
+void Agenda::agregar_recordatorio(Recordatorio rec) {
+    this ->recordatorios_.push_back(rec);
+}
+
+void Agenda::incrementar_dia() {
+    this->fecha_actual_.incrementar_dia();
+}
+
+Fecha Agenda::hoy() {
+    return fecha_actual_;
+}
+
+list<Recordatorio> Agenda::recordatorios_de_hoy() {
+    list<Recordatorio> res;
+
+    for (Recordatorio rec : recordatorios_) {
+        if(rec.fecha() == this->hoy())
+            res.push_back(rec);
+    }
+    return res;
+}
+
+vector<Recordatorio> ordenar_lista(list<Recordatorio> lista){
+    vector<Recordatorio> res;
+    for (Recordatorio rec : lista) {
+        res.push_back(rec);
+    }
+
+    for (int i = 0; i < res.size(); i++) {
+        for (int j = 0; j < res.size() -i; ++j) {
+
+            if (res[j+1].horario() < res[j].horario()){
+                swap(res[j], res[j+1]);
+            }
+        }
+    }
+    return res;
+}
+
+
+ostream& operator<<(ostream& os, Agenda a) {
+    //a.recordatorios_de_hoy().sort();
+    vector<Recordatorio> res = ordenar_lista(a.recordatorios_de_hoy()); //Recordatorios del día ordenados en un vector
+
+    os  <<  a.hoy() << endl << "=====" << endl;
+
+    for(int i = 0; i < res.size(); i++){
+        os << res[i].mensaje() << " @ " << res[i].fecha() << " " << res[i].horario() << endl;
+    }
+    //os  <<  a.hoy() << endl << "=====" << endl;
+    return os;
+}
